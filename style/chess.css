@@ -1,0 +1,53 @@
+#chessTable {
+  border-spacing: 0;
+  border: 1px solid #555;
+  width: 48em;
+  height: 48em; }
+
+.chess-black {
+  background-color: #555; }
+
+.chess-white {
+  background-color: #fff; }
+
+.chess-square {
+  width: 12.5%;
+  height: 12.5%;
+  text-align: center;
+  padding: 0; }
+  .chess-square.active {
+    background-color: hotpink; }
+
+.chess-piece {
+  font-family: 'Arial Unicode MS','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 4em; }
+
+#nextMove {
+  height: 2em;
+  width: 2em;
+  border: 1px solid black; }
+
+ol#moves {
+  width: 48em;
+  list-style-type: none;
+  counter-reset: chess-moves-counter;
+  padding-left: 0;
+  margin-top: 1em; }
+  ol#moves li {
+    float: left;
+    margin-right: 1em; }
+    ol#moves li::before {
+      content: counter(chess-moves-counter, decimal) ".";
+      counter-increment: chess-moves-counter;
+      font-weight: bold;
+      padding-right: 0.5em; }
+
+#status {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 1em; }
+

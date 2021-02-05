@@ -1,0 +1,17 @@
+{
+   "compilerOptions": {
+        "target": "es2015",
+        "module": "es2015",
+        "sourceMap": true,
+        "rootDir": ".",
+        "outDir": "app"        
+    },
+    "compileOnSave": true,
+    "exclude": [
+        "node_modules",
+        "typings/main.d.ts",
+        "typings/main",
+        "app/libs"
+    ]
+    
+}
